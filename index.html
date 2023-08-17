@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    bib{
+      font-size: 20px;
+    }
+
+    data{
+      font-size: 10px;
+    }
+    
+    bibl{
+      font-size: 25px;
+    }
+  </style>
+
+  <style>
+        .link-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .link {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+  <body>
+      <div class="link-container"> </div>
+    <script>
+    fetch('links.html')
+        .then(response => response.text())
+        .then(data => {
+            const linkContainer = document.querySelector('.link-container');
+            linkContainer.innerHTML = data;
+        });
+    </script>
+  </body>
+  <body>
+    <img src= "Logo.jpg" 
+      width="400px" />
+
+    <b><br><br>Cursos<br></b>
+    <ul>
+        <li><a href="https://www.exemplo.com" >Análise e Desenvolvimento de Sistemas</a></li>
+        <li><a href="https://www.exemplo2.com">Engenharia de Produção</a></li>
+        <li><a href="https://www.exemplo3.com">Gestão em Tecnologia da Informação</a></li>
+        <li><a href="https://www.exemplo4.com">Letras</a></li>
+        <li><a href="https://www.exemplo5.com">Gestão Pública</a></li>
+    </ul>
+    <b><br><br>Eventos<br></b>
+    <img src= "SEJA_RARO.jpg" width="250px"
+      <p><br>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+
+    <strong><bibl><br>Sobre a Biblioteca<br></bibl></strong>
+    <img src = "library.jpeg" />
+
+    <strong><br><br><br><bib>Conheça os novos títulos disponíveis na nossa biblioteca</bib></strong>
+
+    <strong><br><data>Publicado: Quarta-feira, 14 de agosto de 2019</data></strong>
+
+    <bibl><strong><br><br>Conhecendo o SUAP</strong></bibl>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6h6lpOz-fuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+
+    <a href = "https://www.facebook.com/ifsppirituba" target = "_blank">
+    <img src= "facebook.png"
+      width = 70px/>
+    </a>
+    <img src= "MoveTop.png"
+      width = 70px/>
+    <p><data>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</data></p>
+
+
+      
+  </body>
+
+</html>

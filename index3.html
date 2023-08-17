@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <style>
+        .link-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .link {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+      <div class="link-container"> </div>
+    <script>
+    fetch('links.html')
+        .then(response => response.text())
+        .then(data => {
+            const linkContainer = document.querySelector('.link-container');
+            linkContainer.innerHTML = data;
+        });
+    </script>
+    </body>
+
+    <body>
+      <h2><br><br><br>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+      <p>Objetivo geral:<br>
+        O objetivo geral do curso de Análise e Desenvolvimento de Sistemas é capacitar os       
+        estudantes com conhecimentos teóricos e práticos para projetar, desenvolver e implementar 
+        sistemas de software eficientes e eficazes que atendam às necessidades das organizações e 
+        usuários. Esse curso envolve uma combinação de habilidades técnicas, competências de 
+        resolução de problemas e compreensão das necessidades dos clientes.
+      </p>
+      
+    </body>
+
+</html>

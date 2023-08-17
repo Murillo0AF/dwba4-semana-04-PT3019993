@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <style>
+        .link-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .link {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+      <div class="link-container"> </div>
+    <script>
+    fetch('links.html')
+        .then(response => response.text())
+        .then(data => {
+            const linkContainer = document.querySelector('.link-container');
+            linkContainer.innerHTML = data;
+        });
+    </script>
+    </body>
+
+</html>
